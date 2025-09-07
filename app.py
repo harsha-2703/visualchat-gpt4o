@@ -7,7 +7,7 @@ import sqlite3
 import pandas as pd
 
 # Initialize OpenAI client
-apiKey = 'sk-proj-prPjadtRSGEp9H0VduaET3BlbkFJMtaphZFF1p7KCNAzaND7'
+apiKey = ''
 client = OpenAI(api_key=apiKey)
 
 # Initialize session state if not exists
@@ -587,4 +587,5 @@ if selected == "Generate":
             else: 
                 st.warning("Please enter a description of the floorplan.")
     if fig:
+
         st.pyplot(fig)
